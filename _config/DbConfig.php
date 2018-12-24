@@ -23,8 +23,7 @@ class DbConfig {
     }
 
     /**
-     * Faz a conexão com o banco de dados
-     * e retorna ela
+     * Verifica se a conexão já foi feita se já retorna se não cria ela
      */
     public function getConnection () {
        if(!DbConfig::$instance) {
@@ -44,6 +43,10 @@ class DbConfig {
        } else {
            return DbConfig::$instance;
        }
+    }
+
+    public function closeConnection () {
+        mysqli_close(DbConfig::$instance);
     }
 
 }
