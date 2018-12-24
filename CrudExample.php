@@ -10,7 +10,7 @@
         private $db;
         public function __construct()
         {
-            $config = new DbConfig('localhost', 'root', '', 'db_test');
+            $config = new DbConfig('<HOST>', '<USER>', '<PASSWORD>', '<DATABASE>');
             $this->db = $config->getConnection();
         }
 
