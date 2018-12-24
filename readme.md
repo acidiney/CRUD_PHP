@@ -20,7 +20,7 @@ A classe `DbConfig` situada no directório `_config`, possui um metódo e uma va
    - **user**
    - **pwd**
    - **database**
-   - **port** - Por padrão é `3306`, caso tengas alterado na configuração do SGBD, precisas alterar ela.
+   - **port** - Por padrão é `3306`, caso tenhas alterado na configuração do SGBD, precisas passar ela quando instanciares a classe.
    
 # License
     MIT - Acidiney Dias
