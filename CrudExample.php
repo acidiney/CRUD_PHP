@@ -18,7 +18,7 @@
             $query = "SELECT name FROM Users";
             try {
                 $rows = mysqli_query($this->db, $query);
-                return $rows->fetch_all();
+                return $rows->fetch_all(); // fetch_all() - retorna todos os valores associados ao rotorno em $rows
             } catch (mysqli_sql_exception $ex) {
                 var_dump("Opa, não consegui recuperar os valores, algo está errado", $ex);
             }
