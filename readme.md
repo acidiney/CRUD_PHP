@@ -3,7 +3,7 @@
 A classe `DbConfig` situada no directório `_config`, possui um metódo e uma variavel privada.
  
  - **getConnection()** :: Faz a conexão com o Banco de dados e se já tiver uma conexão existente no sistema apenas retorna ela.
- - **$instance** :: Classe estática que possui a conexão com o banco de dados.
+ - **$instance** :: Propriedade estática que possui a conexão com o banco de dados.
  
 ## CrudExample Class
 
